@@ -1,6 +1,10 @@
-## Upload file to REST endpoint and Store in Postgres DB using Sequelize and Express
+## Node Express for file upload management with Postgres and Sequelize
 
-This is demonstartion of File Upload eample to Rest Api using Express and Sequelize. I am using Multer which is a node.js middleware for handling multipart/form-data, which is primarily used for uploading files. The uploaded form data is being stored to PostGres DB.
+This is demonstartion of developing express node endpoint to accept file as forma data and store the information in Postgres DB using Sequelize ORM.
+
+Sequelize is a promise-based Node.js ORM for Postgres, MySQL, MariaDB, SQLite and Microsoft SQL Server. It features solid transaction support, relations, eager and lazy loading, read replication and more. For detailed documentation you can check [this](https://sequelize.org/).
+
+I am using [Multer](https://www.npmjs.com/package/multer) which is a node.js middleware for handling multipart/form-data, which is primarily used for uploading files. The uploaded file is saved to the server and the file information is saved to PostGres Db.
 
 I have also included swagger-ui into the project and wrote the documentation manually.
 
