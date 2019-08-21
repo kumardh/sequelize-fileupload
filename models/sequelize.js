@@ -8,10 +8,11 @@ const sequelize = new Sequelize('testdb', 'postgres', 'Manav2020#', {
 
 const Category = CategoryModel(sequelize, Sequelize);
 
-sequelize.sync() //Pass this option if you want to force delete and recreate. { force: true }
+//Pass { force: true } as option if you want to force delete and recreate.
+sequelize.sync() 
   .then(() => {
     console.log(`Database & tables created!`)
-  });
+});
 
 module.exports = {
     Category

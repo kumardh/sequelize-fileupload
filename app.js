@@ -17,9 +17,4 @@ app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
 categoryApi(app,db);
 
-
-
-
-
-app.listen(port, ()=> console.log("Application123 started..."));
-
+app.listen(port, ()=> console.log(`Application started on Port ${port}.`));
